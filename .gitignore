@@ -1,0 +1,10 @@
+# Compiled binaries / build artifacts
+*.exe
+*.exe.manifest
+*.ahk.bin
+
+# OS / editor cruft
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
