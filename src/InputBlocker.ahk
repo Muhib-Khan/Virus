@@ -2,26 +2,19 @@
 #SingleInstance Force
 #Requires AutoHotkey v1.1
 #MaxThreadsPerHotkey 2
+#Persistent
 
 ; ============================================
-; SELF-ELEVATE TO ADMINISTRATOR (REQUIRED)
+; BLOCK MOUSE + KEYBOARD (NO-ADMIN MODE)
 ; --------------------------------------------
-; BlockInput silently fails on Windows 10+ unless
-; the script runs with Administrator privileges.
-; If we are not elevated, relaunch ourselves with
-; UAC elevation, then exit this instance.
-; ============================================
-if not A_IsAdmin
-{
-    Run *RunAs "%A_ScriptFullPath%"
-    ExitApp
-}
-
-; ============================================
-; BLOCK MOUSE + KEYBOARD
+; No UAC popup, no Administrator required.
+; NOTE: Without admin, Windows 10/11 limits
+; BlockInput, so this is best-effort. Mouse is
+; blocked via the low-level hook when possible;
+; keyboard is blocked via BlockInput.
 ; ============================================
 
-; Block both at startup
+; Block both at startup (best-effort, no popup)
 BlockInput, Mouse
 BlockInput, Keyboard
 
