@@ -80,3 +80,35 @@ These hotkeys work even while frozen (low-level keyboard hook sits above the loc
 `BlockInput` blocking works best as **Administrator**. Without admin, Windows 10/11
 limits it, so mouse blocking may be partial on some systems. The unlock hotkeys always
 work, and `Ctrl+Alt+Del` is never blocked as a last resort.
+
+---
+
+# 🎭 Bonus: `Pranks.ahk` — harmless pranks (no admin, no popups)
+
+A separate script that does **only reversible** visual changes + folder tidy-ups.
+**It never deletes, encrypts, or destroys any data** — files are just *moved* into
+new `PRANK-<date>` subfolders you can move back, and every visual change is undone
+by one hotkey.
+
+Run it the same way: double-click `Pranks.ahk`, or
+`"C:\Program Files\AutoHotkey\AutoHotkey.exe" Pranks.ahk`
+
+## What it does
+
+| Effect | How to undo |
+|--------|-------------|
+| Swaps left/right mouse buttons | `Ctrl+Alt+Shift+U` |
+| Sets a fast/silly mouse speed | `Ctrl+Alt+Shift+U` |
+| Hides the Taskbar | `Ctrl+Alt+Shift+U` |
+| Moves Desktop + Documents files into `PRANK-<date>` subfolders (grouped by type) | move them back manually |
+
+## Hotkeys
+
+| Hotkey            | Action                                  |
+|-------------------|-----------------------------------------|
+| `Ctrl+Alt+R`      | Run all pranks                          |
+| `Ctrl+Alt+Shift+U`| Undo all visual pranks                  |
+| `Ctrl+Alt+Esc`    | Emergency exit                          |
+
+> ⚠️ The folder part **only moves files** — nothing is deleted. To fully restore,
+> open the `PRANK-<date>` folders and drag files back to Desktop/Documents.
