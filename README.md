@@ -97,16 +97,19 @@ Run it the same way: double-click `Pranks.ahk`, or
 
 | Effect | How to undo |
 |--------|-------------|
+| Turns wallpaper into a random garish solid color | `Ctrl+Alt+Shift+U` |
 | Swaps left/right mouse buttons | `Ctrl+Alt+Shift+U` |
 | Sets a fast/silly mouse speed | `Ctrl+Alt+Shift+U` |
+| Slows keyboard repeat to crawl | `Ctrl+Alt+Shift+U` |
 | Hides the Taskbar | `Ctrl+Alt+Shift+U` |
+| Hides all Desktop icons | `Ctrl+Alt+Shift+U` |
 | Moves Desktop + Documents files into `PRANK-<date>` subfolders (grouped by type) | move them back manually |
 
 ## Hotkeys
 
 | Hotkey            | Action                                  |
 |-------------------|-----------------------------------------|
-| `Ctrl+Alt+R`      | Run all pranks                          |
+| `Ctrl+Alt+R`      | Run all pranks (MEGA)                   |
 | `Ctrl+Alt+Shift+U`| Undo all visual pranks                  |
 | `Ctrl+Alt+Esc`    | Emergency exit                          |
 
